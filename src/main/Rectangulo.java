@@ -44,4 +44,17 @@ public class Rectangulo {
         return ancho * 2 + altura * 2;
     }
 
+    public Rectangulo(int ancho, int altura) throws RectanguloException {
+        setAncho(ancho);
+        setAltura(altura);
+    }
+    public Rectangulo() throws RectanguloException {
+        setAncho(0);
+        setAltura(0);
+    }
+
+    @Override
+    public String toString() {
+        return "El rectangulo tiene un ancho de "+ancho+", una altura de "+altura+", se area es "+getArea();
+    }
 }
